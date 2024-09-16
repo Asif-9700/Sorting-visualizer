@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <select id="algorithm"  onchange="updateComplexity()">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+            <button onclick="startSorting()">Start Sorting</button>
+            <button onclick="generateRandomArray()">Generate Random Array</button>
+            <div class="slider-container">
+                <label for="speed">Speed:</label>
+                <input type="range" id="speed" min="1" max="100" value="50">
+                <span id="speedValue">50</span> ms
+            </div>
+        </div>
+        <div class="complexity" id="complexity">
+            <p><strong>Best Time Complexity:</strong> <span id="bestTime"></span></p>
+            <p><strong>Average Time Complexity:</strong> <span id="averageTime"></span></p>
+            <p><strong>Worst Time Complexity:</strong> <span id="worstTime"></span></p>
+            <p><strong>Space Complexity:</strong> <span id="spaceComplexity"></span></p>
+        </div>
+        <div class="bars" id="bars"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
