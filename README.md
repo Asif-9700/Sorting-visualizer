@@ -20,6 +20,7 @@ You need a modern web browser to view the visualizer.
 
 Running the Project Locally
 Clone the repository:
+git clone https://github.com/Asif-9700/Sorting-visualizer.git
 
 Navigate to the project directory:
 cd sorting-visualizer
